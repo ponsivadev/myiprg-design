@@ -1,4 +1,5 @@
-.text-primary {
+.text-primary,
+.text-color-primary {
   color: #1a3c90 !important;
 }
 
@@ -8,6 +9,10 @@
   border-radius: 5px;
   padding: 10px;
   height: 50px;
+}
+
+.mh-500 {
+  min-height: 500px;
 }
 
 #login .logo-img,
@@ -93,4 +98,13 @@
 #forgot-password input[type=password]::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #1a3c90;
+}
+
+section#dashboard .card {
+  height: 250px;
+  background-color: #E5E5E5;
+}
+section#dashboard .card:hover {
+  background-color: #1a3c90;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

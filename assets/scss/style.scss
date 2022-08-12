@@ -2,13 +2,15 @@
 $color-primary: #1a3c90;
 $color-secondary: #f5f5f5;
 $input-bg-color: #D9D9D9;
+$card-bg-color: #E5E5E5;
 $white: #fff;
 $black: #000;
 $gray: #ccc;
 
 
 // components classes
-.text-primary {
+.text-primary,
+.text-color-primary {
   color: $color-primary !important;
 }
 .btn-all {
@@ -17,6 +19,10 @@ $gray: #ccc;
     border-radius: 5px;
     padding: 10px;
     height: 50px;
+}
+
+.mh-500 {
+    min-height: 500px;
 }
 
 // section login, forgot-password
@@ -57,6 +63,19 @@ $gray: #ccc;
         &::-ms-input-placeholder {
             /* Microsoft Edge */
             color: $color-primary;
+        }
+    }
+}
+
+// section#dashboard
+
+section#dashboard {
+    .card {
+        height: 250px;
+        background-color: $card-bg-color;
+        &:hover {
+            background-color: $color-primary;
+            color: $white;
         }
     }
 }
