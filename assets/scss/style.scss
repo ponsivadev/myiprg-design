@@ -1,3 +1,60 @@
-.siva {
-    color: red;;
+// colors
+$color-primary: #1a3c90;
+$color-secondary: #f5f5f5;
+$input-bg-color: #D9D9D9;
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+
+
+// components classes
+.text-primary {
+  color: $color-primary !important;
+}
+.btn-all {
+    background-color: $color-primary;
+    color: $white;
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+}
+
+// section login, forgot-password
+
+#login,
+#forgot-password {
+    .logo-img {
+        width: 50%;
+        height: auto;
+    }
+
+    .float-revert {
+        float: revert
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid $gray;
+        padding: 10px;
+        background-color: $input-bg-color;
+        color: $black;
+
+        &::placeholder {
+            color: $color-primary;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $color-primary;
+        }
+
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $color-primary;
+        }
+    }
 }
