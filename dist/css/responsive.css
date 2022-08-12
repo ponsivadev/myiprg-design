@@ -6,10 +6,20 @@
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
   */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .toggle-button {
+    margin-left: -15px;
+  }
+}
 /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .toggle-button {
+    margin-left: -15px;
+  }
+}
 @media (max-width: 768px) {
   section#login form button.w-50 {
     width: 100% !important;
