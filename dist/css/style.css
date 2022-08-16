@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .text-primary,
 .text-color-primary {
   color: #1a3c90 !important;
@@ -210,4 +211,62 @@ section#new-discography-header .card {
 
 .search .form-outline {
   width: calc(100% - 46px);
+}
+
+section#edit-society-templates .card {
+  min-height: 150px;
+  background-color: #E5E5E5;
+}
+section#edit-society-templates .card:hover {
+  background-color: #1a3c90;
+  color: #fff;
+}
+section#edit-society-templates .form-check {
+  padding-left: 0;
+  width: 100%;
+}
+section#edit-society-templates .form-check input[type=checkbox] {
+  display: none;
+}
+section#edit-society-templates .form-check input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+  font-family: "Arial";
+}
+section#edit-society-templates .form-check input[type=checkbox] + label:before {
+  content: "✔";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0;
+  padding-bottom: 0.95em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+section#edit-society-templates .form-check input[type=checkbox] + label:active:before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+section#edit-society-templates .form-check input[type=checkbox]:checked + label:before {
+  background-color: #1a3c90;
+  border-color: #1a3c90;
+  color: #fff;
+}
+section#edit-society-templates .form-check input[type=checkbox]:checked:disabled + label:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: #F7C28F;
+  border-color: #F7C28F;
+}
+section#edit-society-templates .form-check input[type=checkbox]:disabled + label:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-color: #aaa;
 }/*# sourceMappingURL=style.css.map */

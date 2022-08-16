@@ -191,3 +191,86 @@ section#new-discography-header {
         width: calc(100% - 46px);
     }
 }
+
+
+// edit-society-templates
+section#edit-society-templates {
+	.card {
+		min-height: 150px;
+		background-color: $card-bg-color;
+		&:hover {
+			background-color: $color-primary;
+			color: $white;
+		}
+	}
+
+	.form-check {
+		padding-left: 0;
+		width: 100%;
+		input[type=checkbox] {
+			+ {
+				label {
+					display: block;
+					margin: 0.2em;
+					cursor: pointer;
+					padding: 0.2em;
+					font-family: 'Arial';
+					&:before {
+						content: "\2714";
+						border: 0.1em solid $black;
+						border-radius: 0.2em;
+						display: inline-block;
+						width: 1em;
+						height: 1em;
+						padding-left: 0;
+						padding-bottom: 0.95em;
+						margin-right: 0.2em;
+						vertical-align: bottom;
+						color: transparent;
+						transition: .2s;
+					}
+					&:active {
+						&:before {
+							transform: scale(0);
+						}
+					}
+				}
+			}
+			display: none;
+			&:checked {
+				+ {
+					label {
+						&:before {
+							background-color: $color-primary;
+							border-color: $color-primary;
+							color: $white;
+						}
+					}
+				}
+				&:disabled {
+					+ {
+						label {
+							&:before {
+								transform: scale(1);
+								background-color: #F7C28F;
+								border-color: #F7C28F;
+							}
+						}
+					}
+				}
+			}
+			&:disabled {
+				+ {
+					label {
+						&:before {
+							transform: scale(1);
+							border-color: #aaa;
+						}
+					}
+				}
+			}
+		}
+		
+		
+	}
+}
