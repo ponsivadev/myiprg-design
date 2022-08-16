@@ -269,4 +269,17 @@ section#edit-society-templates .form-check input[type=checkbox]:disabled + label
   -webkit-transform: scale(1);
           transform: scale(1);
   border-color: #aaa;
+}
+
+section#export-selection .card {
+  min-height: 150px;
+  background-color: #E5E5E5;
+}
+section#export-selection .card:hover {
+  background-color: #1a3c90;
+  color: #fff;
+}
+section#export-selection .card .selected {
+  background-color: #1a3c90;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

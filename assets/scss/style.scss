@@ -274,3 +274,24 @@ section#edit-society-templates {
 		
 	}
 }
+
+// export-selection
+section#export-selection {
+	.card {
+		min-height: 150px;
+		background-color: $card-bg-color;
+		&:hover {
+			background-color: $color-primary;
+			color: $white;
+		}
+		.selected {
+			background-color: $color-primary;
+			color: $white;
+		}
+	}
+}
+
+
+
+
+
